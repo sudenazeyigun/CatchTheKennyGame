@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var kenny9: UIImageView!
-    
     @IBOutlet weak var kenny8: UIImageView!
     @IBOutlet weak var kenny7: UIImageView!
     @IBOutlet weak var kenny6: UIImageView!
@@ -88,7 +87,7 @@ class ViewController: UIViewController {
         kennyArray = [kenny1, kenny2, kenny3, kenny4, kenny5, kenny6, kenny7, kenny8, kenny9]
         
         //Timers
-        counter = 10
+        counter = 15
         timeLabel.text = String(counter)
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
